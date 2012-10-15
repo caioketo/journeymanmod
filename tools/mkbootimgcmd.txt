@@ -1,0 +1,1 @@
+mkbootimg --kernel ./zImage --ramdisk ./boot.img-ramdisk.gz --cmdline '' --base 80000000 --pagesize 2048 -o boot.img
