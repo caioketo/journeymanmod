@@ -23,10 +23,14 @@
     COMPILE="CCOMPILER=$TOOLS/arm-eabi-4.4.3/bin/arm-eabi-"
     KERNEL=$DIR/$ANDVER/arch/arm/boot/zImage
     
-    KBUILD_BUILD_VERSION="JourneymanMod-Kernel-alpha1"
+    KBUILD_BUILD_VERSION="JourneymanMod-Kernel-V3"
+    KBUILD_BUILD_USER=""
+    KBUILD_BUILD_HOST=""
     cd ..
     cd $ANDVER
     export KBUILD_BUILD_VERSION
+    export KBUILD_BUILD_USER
+    export KBUILD_BUILD_HOST
     export $COMPILE
     export $ARCH
     make ARCH=arm $DEFCONFIG
